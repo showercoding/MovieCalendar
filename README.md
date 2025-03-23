@@ -1,1 +1,3 @@
 微信小程序前端，电影日历，包含电影推荐、过往今日电影以及正在上映的电影列表
+
+![image](https://github.com/showercoding/MovieCalendar/blob/main/capturePic/b.jpg)
