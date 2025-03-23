@@ -1,0 +1,147 @@
+/* pages/calendar.wxss */
+/* calendar.wxss */
+.calendar {
+  width: 100%;
+  background: #fff;
+  border-radius: 20rpx;
+  overflow: hidden;
+  box-shadow: 0 4rpx 20rpx rgba(0, 0, 0, 0.1);
+}
+
+.banner {
+  background: #e5151f;
+  height: 160rpx;
+  display: flex;
+	align-items: center;
+	justify-content: center;
+  position: relative;
+}
+
+/* .banner-img {
+  width: 120rpx;
+  height: 120rpx;
+} */
+
+.banner-text {
+  color: #FFD700;
+  font-size: 48rpx;
+	font-weight: bold;
+}
+
+.calendar-main {
+  padding: 40rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.lunar-info {
+  flex: 1;
+}
+
+.almanac {
+  font-size: 24rpx;
+  color: #666;
+}
+
+.label {
+  color: #333;
+  margin-right: 10rpx;
+}
+
+.date-number {
+  font-size: 160rpx;
+  font-weight: bold;
+  color: #1890ff;
+  line-height: 1;
+  margin: 0 40rpx;
+}
+
+.solar-info {
+  flex: 1;
+  text-align: right;
+}
+
+.year {
+  font-size: 32rpx;
+  font-weight: bold;
+  display: block;
+}
+
+.month {
+  font-size: 28rpx;
+  color: #666;
+  display: block;
+  margin: 10rpx 0;
+}
+
+.weekday {
+  font-size: 28rpx;
+  color: #666;
+}
+
+.week-view {
+  display: flex;
+  padding: 20rpx;
+  border-top: 1rpx solid #eee;
+}
+
+.week-item {
+  flex: 1;
+  text-align: center;
+  font-size: 24rpx;
+  color: #666;
+}
+
+.lunar-day {
+  display: block;
+  margin-bottom: 6rpx;
+}
+
+.week-day {
+  color: #999;
+}
+.history-title{
+  padding-bottom: 50px;
+  display: flex;
+	align-items: center;
+	justify-content: center;
+  position: relative;
+  flex-direction: column;
+}
+.history-today{
+  color: #333;
+  font-size: 48rpx;
+  font-weight: bold;
+  padding-bottom: 40px;
+}
+.movie-info{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+	display: -webkit-flex;
+	display: flex;
+  flex-direction: column;
+  width: 92%;
+}
+.movie-list{
+  display: flex;
+	border:2px solid #555555;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.movie-title{
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 40%;
+  align-content: center;
+  justify-content: center;
+
+}
+.movie-poster{
+  width: 30%;
+}

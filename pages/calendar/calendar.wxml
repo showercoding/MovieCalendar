@@ -1,0 +1,55 @@
+<!-- calendar.wxml -->
+<view class="calendar">
+  <!-- 顶部装饰banner -->
+  <view class="banner">
+    <view class="banner-text">吉祥如意</view>
+  </view>
+
+  <!-- 主日历区域 -->
+  <view class="calendar-main">
+    <!-- 左侧农历信息 -->
+    <view class="lunar-info">
+      <text class="lunar-year">{{ganzhi}}</text>
+      <text class="lunar-date">{{lunar_date}}</text>
+      <view class="almanac">
+        <view class="suitable">
+          <text class="label">宜：</text>
+          <text wx:for="{{good}}" wx:key="*this">{{item}} </text>
+        </view>
+        <view class="unsuitable">
+          <text class="label">忌：</text>
+          <text wx:for="{{bad}}" wx:key="*this">{{item}} </text>
+        </view>
+      </view>
+    </view>
+
+    <!-- 中间大日期 -->
+    <view class="date-number" bindtap="onTapDate">{{day}}</view>
+
+    <!-- 右侧公历信息 -->
+    <view class="solar-info">
+      <text class="year">{{year}}年</text>
+      <text class="month">{{month}}月</text>
+      <text class="weekday">{{weekday}}</text>
+    </view>
+  </view>
+
+  <view class="history-title">
+    <view class="history-today">过往今日上映的电影</view>
+    <view class="movie-info">
+      <view wx:for="{{history}}" wx:for-index="idx" wx:for-item="item">
+        <view class="movie-list">
+          <image class="movie-poster" mode="widthFix" src="{{item.fields.poster_path}}"></image>
+          <view class="movie-title">
+            <view>{{item.fields.title}}</view>
+            <view>导演:{{item.fields.directors}}</view>
+          </view>
+          <view class="movie-title">
+            <view>{{item.fields.publish_date}}</view>
+            <view>演员:{{item.fields.actors}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

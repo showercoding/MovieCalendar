@@ -1,0 +1,21 @@
+<!-- calendar.wxml -->
+<view class="calendar">
+  <!-- 顶部装饰banner -->
+  <view class="banner">
+    <!-- <image class="banner-img" src="/assets/caishen.png" mode="aspectFit"></image> -->
+    <view class="banner-text">正在热映</view>
+  </view>
+
+
+  <view class="history-title">
+    <view class="movie-info">
+      <view  wx:for="{{showing}}" wx:for-index="idx" wx:for-item="item">
+        <view class="movie-list">
+          <image class="movie-poster" mode="widthFix" src="{{item.fields.poster_path}}"></image>
+          <view class="movie-title">{{item.fields.title}}</view>
+          <view class="movie-title">{{item.fields.publish_date}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

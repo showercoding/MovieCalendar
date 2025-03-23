@@ -1,0 +1,35 @@
+<!--index.wxml-->
+<view class="movie-main">
+    <view animation="{{animationData}}" class="movie-data-container-inner">
+        <view class="inner-comment"><text>“</text>{{comment}}</view>
+        <view class="lunar">{{lunar_str}}</view>
+        <view class="solar">{{today_solar}}</view>
+        <view class="gb">
+            <view class="good">宜事: {{good}}</view>
+            <view class="bad">忌事: {{bad}}</view>
+        </view>
+        <view class="lunar">今日推荐</view>
+        <view class="lunar">《{{title}}》</view>
+        <view class="starview">
+            <block wx:for="{{stars}}"  wx:for-item="item">
+                <image src="../../images/{{item}}-star.png" mode="aspectFit" class="star"></image>
+            </block>
+        </view>
+        <view class="budget">预算--{{budget}}</view>
+        <view class="revenue">票房--{{revenue}}</view>
+        <view class="revenue">导演--{{directors}}</view>
+        <view class="revenue">演员--{{actors}}</view>
+        <view class="inner-comment-right"><text>“</text>{{comment}}</view>
+    </view>
+</view>
+<view class="post" style="background-image: url({{backImage}}); background-size: cover; background-repeat: no-repeat;"></view>
+<view class="movie-main">
+    <view animation="{{animationData}}" class="container-inner">
+        <view class="inner-comment"><text>“</text>{{comment}}</view>
+        <view class="title">{{title}}</view>
+        <view class="publish_date">{{publish_date}}</view>
+        <view class="date-show-year">在{{show_year}}年前上映</view>
+        <view class="overview">{{overview}}</view>
+        <view class="inner-comment-right"><text>“</text>{{comment}}</view>
+    </view>
+</view>

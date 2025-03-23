@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/recommend/recommend",
+    "pages/calendar/calendar",
+    "pages/showing/showing"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "秀儿手作的影世界",
+    "navigationBarBackgroundColor": "#ffffff"
+  },
+  "tabBar": {
+    "color": "#6e6d6b",
+    "selectedColor": "#e64340",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/recommend/recommend",
+        "text": "日荐"
+      },
+      {
+        "pagePath": "pages/calendar/calendar",
+        "iconPath": "images/nav/history.png",
+        "selectedIconPath": "images/nav/history_choose.png",
+        "text": "影史"
+      },
+      {
+        "pagePath": "pages/showing/showing",
+        "iconPath": "images/nav/showing.png",
+        "selectedIconPath": "images/nav/showing_choose.png",
+        "text": "热映"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}
